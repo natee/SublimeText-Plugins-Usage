@@ -1,0 +1,11 @@
+.menu, 
+.menu .i {
+	list-style: none;
+	padding: 0 0 0.5em;
+}
+.menu:before {
+	content: "[";
+}
+.menu:after {
+	content: "]";
+}
