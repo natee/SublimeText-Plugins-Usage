@@ -1,7 +1,7 @@
 SublimeText-Plugins-Usage
 =========================
 
-这个仓库记录Mac下使用SublimeText一些常用插件的方法，不定时更新，Windows下请自行寻找解决方案。  
+常用SublimeText插件的使用方法，不定时更新，以下内容仅记录Mac下的使用情况，Windows下请自行寻找解决方案（区别就在于菜单位置不同）。  
 
 *Mac按键表*   
     *⌘（command）*   
