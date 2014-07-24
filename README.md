@@ -4,13 +4,7 @@ SublimeText-Plugins-Usage
 常用SublimeText插件的使用方法，不定时更新，以下内容仅记录Mac下的使用情况，Windows下请自行寻找解决方案（区别就在于菜单位置不同）。  
 
 *Mac按键表*   
-    *⌘（command）*   
-    *⌥（option）*    
-    *⇧（shift）*    
-    *⇪（caps lock）*    
-    *⌃（control）*    
-    *↩（return）*    
-    *⌅（enter）*
+    *⌘（command）*   *⌥（option）*    *⇧（shift）*    *⇪（caps lock）*   *⌃（control）*    *↩（return）*    *⌅（enter）*
 
 
 ###安装Package Control###
@@ -22,8 +16,9 @@ SublimeText-Plugins-Usage
 
 接下来在新窗口中输入要安装的插件名称并回车即可。
 
+---
 
-###Format CSS - CSS格式化插件###
+###Format CSS - CSS格式化###
 安装后可以发现菜单栏的Edit有一个'CSS Format'选项，先**选中一部分代码**，然后点击这个命令。   
 
 具体效果如下。
@@ -85,3 +80,59 @@ SublimeText-Plugins-Usage
 ```
 .menu,.menu .i{list-style:none;padding:0 0 0.5em}.menu:before{content:"["}.menu:after{content:"]"}
 ```
+---
+###Emmet - 快速编写HTML###
+Emmet的前身就是zen coding，它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。
+
+####快速编写HTML####
+1.初始化页面
+
+新建一个.html文件，输入`！`或者`html:5`然后按`tab`键，可以看到快速生成了一个html5格式的文档。   
+
+*  `html:5` 或`!`：用于HTML5文档类型
+*  `html:xt`：用于XHTML过渡文档类型
+*  `html:4s`：用于HTML4严格文档类型
+
+2.添加CLASS、ID属性等   
+
+输入`p.bar#foo`按`tab`（后文省略按`tab`）
+
+3.元素嵌套和分组
+
+`h1 > (h2 + p)`
+
+*  `>`：子元素符号，表示嵌套的元素
+*  `+`：同级标签符号
+*  `^`：可以使该符号前的标签提升一行
+*  `()`：分组
+
+4.隐式标签
+
+Emmet会根据父级标签来判段生成何种标签，如，直接输入`.bar`会直接生成一个`<div class="bar"></div>`的标签，而在`ul`中输入`.bar`时则会生成`<li class="bar"></li>`。
+
+*  li：用于ul和ol中
+*  tr：用于table、tbody、thead和tfoot中
+*  td：用于tr中
+*  option：用于select和optgroup中
+
+5.多个重复元素
+
+如：`ul>li*3`   
+
+6.带属性的元素
+
+如`ul>li.item$3`就会产生如下代码：   
+```
+   <ul>		
+     <li class="item1"></li><li class="item2"></li><li class="item3"></li>
+   </ul>   
+```
+
+#####快速编写CSS######
+这里不写了，感觉css完全不需要用到这个，IDE已经能很好的满足需求了。
+
+
+官网[详细语法](http://docs.emmet.io/cheat-sheet/)
+
+---
+
