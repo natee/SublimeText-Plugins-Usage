@@ -12,7 +12,10 @@ SublimeText-Plugins-Usage
 
    	import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())  
    
-安装好后，按 `⌘+⇧+P` 或者点击菜单栏 `SublimeText->Preference->Package Control` 打开包控制窗口。输入install，然后选择 `Package Control:Install Package` 并回车。
+安装好后，按 `⌘+⇧+P` 或者点击菜单栏 `SublimeText->Preference->Package Control` 打开包控制窗口。
+
+  - 安装插件：输入install，然后选择 `Package Control:Install Package` 并回车。
+  - 卸载插件：输入remove，然后选择 `Package Control:Remove Package` 并回车，然后选择下拉列表中已安装的插件。
 
 接下来在新窗口中输入要安装的插件名称并回车即可。
 
@@ -141,7 +144,7 @@ Emmet会根据父级标签来判段生成何种标签，如，直接输入`.bar`
 
   1. 对着文件右键可以看到有一个`Open Terminal Here`的选项   
   1. `⌘+⇧+T`  
-  
+
 这个会打开默认的terminal，电脑安装了iTerm2，所以放弃这个。
 
 ---
