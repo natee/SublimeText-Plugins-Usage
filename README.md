@@ -155,7 +155,15 @@ Emmet会根据父级标签来判段生成何种标签，如，直接输入`.bar`
 
 ---
 
-####JSFormatter - JS格式化#####
+###JSFormatter - JS格式化###
 调用方式：
 
   1.`Ctrl+Alt+F`
+
+###Color Highilighter - 高亮CSS文件中的颜色
+安装完成后，需进行简单的配置，Preferences → Package Settings → Color Highlighter → Settings – User，添加以下代码：
+```
+{
+  "ha_style": "filled"
+}
+```
