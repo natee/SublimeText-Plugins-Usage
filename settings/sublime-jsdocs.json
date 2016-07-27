@@ -1,4 +1,4 @@
-docs_function_description": true,
+"docs_function_description": true,
     "jsdocs_extra_tags" : [
         "@author natee",
         "@date {{date}}"
