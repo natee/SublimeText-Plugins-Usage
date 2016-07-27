@@ -1,0 +1,8 @@
+docs_function_description": true,
+    "jsdocs_extra_tags" : [
+        "@author natee",
+        "@date {{date}}"
+    ],
+    "jsdocs_extra_tags_go_after" : true,
+    "jsdocs_return_tag" : false
+}
