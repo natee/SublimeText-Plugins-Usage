@@ -7,7 +7,7 @@ SublimeText-Plugins-Usage
     *⌘（command）*   *⌥（option）*    *⇧（shift）*    *⇪（caps lock）*   *⌃（control）*    *↩（return）*    *⌅（enter）*
 
 
-###安装Package Control###
+### 安装Package Control ###
 先启用Package Control，作用是安装插件时很方便，启用方法：菜单栏 – View – Show Console，贴入以下代码并回车，然后重启Sublime。 
 
    	import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())  
