@@ -7,7 +7,7 @@ SublimeText-Plugins-Usage
     *⌘（command）*   *⌥（option）*    *⇧（shift）*    *⇪（caps lock）*   *⌃（control）*    *↩（return）*    *⌅（enter）*
 
 
-###安装Package Control###
+### 安装Package Control ###
 先启用Package Control，作用是安装插件时很方便，启用方法：菜单栏 – View – Show Console，贴入以下代码并回车，然后重启Sublime。 
 
    	import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())  
@@ -21,12 +21,12 @@ SublimeText-Plugins-Usage
 
 ---
 
-###Format CSS - CSS格式化###
+### Format CSS - CSS格式化###
 安装后可以发现菜单栏的Edit有一个'CSS Format'选项，先**选中一部分代码**，然后点击这个命令。   
 
 具体效果如下。
 
-####Expanded####
+#### Expanded ####
 ```
 .menu, .menu .i {
 	list-style: none;
@@ -39,7 +39,7 @@ SublimeText-Plugins-Usage
 	content: "]";
 }
 ```
-####Expanded(Break Selectors)####
+#### Expanded(Break Selectors) ####
 ```
 .menu,
 .menu .i {
@@ -53,41 +53,41 @@ SublimeText-Plugins-Usage
 	content: "]";
 }
 ```
-####Compact####
+#### Compact ####
 ```
 .menu, .menu .i { list-style: none; padding: 0 0 0.5em; }
 .menu:before { content: "["; }
 .menu:after { content: "]"; }
 ```
-####Compact(No Spaces) ####
+#### Compact(No Spaces) ####
 ```
 .menu,.menu .i{list-style:none;padding:0 0 0.5em;}
 .menu:before{content:"[";}
 .menu:after{content:"]";}
 ```
-####Compact(Break Selectors)####
+#### Compact(Break Selectors) ####
 ```
 .menu,
 .menu .i { list-style: none; padding: 0 0 0.5em; }
 .menu:before { content: "["; }
 .menu:after { content: "]"; }
 ```
-####Compact(Break Selectors,No Spaces)####
+#### Compact(Break Selectors,No Spaces) ####
 ```
 .menu,
 .menu .i{list-style:none;padding:0 0 0.5em;}
 .menu:before{content:"[";}
 .menu:after{content:"]";}
 ```
-####Compressed####
+#### Compressed ####
 ```
 .menu,.menu .i{list-style:none;padding:0 0 0.5em}.menu:before{content:"["}.menu:after{content:"]"}
 ```
 ---
-###Emmet - 快速编写HTML###
+### Emmet - 快速编写HTML ###
 Emmet的前身就是zen coding，它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。
 
-####快速编写HTML####
+#### 快速编写HTML ####
 1.初始化页面
 
 新建一个.html文件，输入`！`或者`html:5`然后按`tab`键，可以看到快速生成了一个html5格式的文档。   
@@ -131,7 +131,7 @@ Emmet会根据父级标签来判段生成何种标签，如，直接输入`.bar`
    </ul>   
 ```
 
-#####快速编写CSS######
+##### 快速编写CSS ######
 这里不写了，感觉css完全不需要用到这个，IDE已经能很好的满足需求了。
 
 
@@ -139,7 +139,7 @@ Emmet会根据父级标签来判段生成何种标签，如，直接输入`.bar`
 
 ---
 
-###Terminal - 打开命令行窗口定位到当前文件路径###
+### Terminal - 打开命令行窗口定位到当前文件路径 ###
 安装完成后，有两种方式调用：
 
   1. 对着文件右键可以看到有一个`Open Terminal Here`的选项   
@@ -149,18 +149,18 @@ Emmet会根据父级标签来判段生成何种标签，如，直接输入`.bar`
 
 ---
 
-###MacTerminal - 打开命令行窗口定位到当前文件路径###
+### MacTerminal - 打开命令行窗口定位到当前文件路径 ###
 安装完成后，调用方法：
 - `⌘+⌃(ctrl)+T`
 
 ---
 
-###JSFormatter - JS格式化###
+### JSFormatter - JS格式化 ###
 调用方式：
 
   1.`Ctrl+Alt+F`
 
-###Color Highilighter - 高亮CSS文件中的颜色
+### Color Highilighter - 高亮CSS文件中的颜色
 安装完成后，需进行简单的配置，Preferences → Package Settings → Color Highlighter → Settings – User，添加以下代码：
 ```
 {
@@ -168,5 +168,5 @@ Emmet会根据父级标签来判段生成何种标签，如，直接输入`.bar`
 }
 ```
 
-###DocBlockr - 创建文档块
+### DocBlockr - 创建文档块
 在函数上面输入`/**`，然后按`Tab`键即可。
